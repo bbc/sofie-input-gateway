@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "OSC Server Options",
+    "type": "object",
+    "properties": {
+        "port": {
+            "type": "integer",
+            "ui:title": "Port",
+            "description": "The port to listen on for incoming connections"
+        },
+        "host": {
+            "type": "string",
+            "ui:title": "Host",
+            "description": "The interface on which to listen for connections, will use all if empty"
+        }
+    },
+    "required": [],
+    "additionalProperties": false
+}

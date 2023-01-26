@@ -1,7 +1,7 @@
 import EventEmitter from 'eventemitter3'
 import { Device, TriggerEventArgs as DeviceTriggerEventArgs } from './devices/device'
 import { SomeFeedback } from './feedback/feedback'
-import { HTTPDevice, HTTPDeviceConfig, DEVICE_CONFIG as HTTP_CONFIG } from './integrations/http'
+import { HTTPServer, HTTPDeviceConfig, DEVICE_CONFIG as HTTP_CONFIG } from './integrations/http'
 import { MIDIDevice, MIDIDeviceConfig, DEVICE_CONFIG as MIDI_CONFIG } from './integrations/midi'
 import {
 	StreamDeckDevice,

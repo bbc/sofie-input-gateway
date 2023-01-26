@@ -1,0 +1,111 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "MIDI Controller Options",
+    "type": "object",
+    "properties": {
+        "inputName": {
+            "type": "string",
+            "ui:title": "Input Name",
+            "description": "The name of the MIDI Input to connect to for incoming messages"
+        },
+        "outputName": {
+            "type": "string",
+            "ui:title": "Output Name",
+            "description": "The name of the MIDI Output to connect to for sending feedback"
+        },
+        "feedbackSettings": {
+            "type": "object",
+            "ui:title": "Feedback Settings",
+            "description": "Configuration of the feedback behavior",
+            "properties": {
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "title": "MIDI Note On Feedback",
+                        "properties": {
+                            "trigger": {
+                                "type": "string",
+                                "ui:title": "Trigger",
+                                "description": "The trigger that this feedback relates to"
+                            },
+                            "channel": {
+                                "type": "string",
+                                "ui:title": "Channel"
+                            },
+                            "note": {
+                                "type": "integer",
+                                "ui:title": "Note"
+                            },
+                            "velocity": {
+                                "type": "integer",
+                                "ui:title": "Velocity - Default",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            },
+                            "velocityPresent": {
+                                "type": "integer",
+                                "ui:title": "Velocity - Present",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            },
+                            "velocityNext": {
+                                "type": "integer",
+                                "ui:title": "Velocity - Next",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            },
+                            "velocityOnAir": {
+                                "type": "integer",
+                                "ui:title": "Velocity - Next",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            }
+                        }
+                    }
+                },
+                "cc": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "title": "MIDI CC Feedback",
+                        "properties": {
+                            "trigger": {
+                                "type": "string",
+                                "ui:title": "Trigger",
+                                "description": "The trigger that this feedback relates to"
+                            },
+                            "channel": {
+                                "type": "string",
+                                "ui:title": "Channel"
+                            },
+                            "cc": {
+                                "type": "integer",
+                                "ui:title": "Note"
+                            },
+                            "value": {
+                                "type": "integer",
+                                "ui:title": "Value - Default",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            },
+                            "valuePresent": {
+                                "type": "integer",
+                                "ui:title": "Value - Present",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            },
+                            "valueNext": {
+                                "type": "integer",
+                                "ui:title": "Value - Next",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            },
+                            "valueOnAir": {
+                                "type": "integer",
+                                "ui:title": "Value - Next",
+                                "ui:description": "Use `-1` to not emit anything when condition met"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [],
+    "additionalProperties": false
+}

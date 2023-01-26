@@ -108,6 +108,7 @@
 		"access": "public"
 	},
 	"devDependencies": {
-		"@types/fold-to-ascii": "^5.0.0"
+		"@types/fold-to-ascii": "^5.0.0",
+		"json-schema-to-typescript": "^11.0.3"
 	}
 }

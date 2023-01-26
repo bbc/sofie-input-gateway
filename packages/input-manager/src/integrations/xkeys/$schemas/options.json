@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "X-Keys Device Options",
+    "type": "object",
+    "properties": {
+        "unitId": {
+            "type": "integer",
+            "ui:title": "Unit ID",
+            "ui:description": "This is a user-configurable ID that is supposed to identify the set of physical labels on the buttons",
+            "description": "User-configurable ID, indetyfing a particular device configuration"
+        },
+        "path": {
+            "type": "string",
+            "ui:title": "Device Path",
+            "description": "The device path or part of it, where the device is attached in the system device tree"
+        },
+        "productId": {
+            "type": "integer",
+            "ui:title": "Product ID",
+            "description": "Device type identifier"
+        },
+        "serialNumber": {
+            "type": "integer",
+            "ui:title": "Serial Number",
+            "description": "The serial number of the device"
+        }
+    },
+    "required": [],
+    "additionalProperties": false
+}

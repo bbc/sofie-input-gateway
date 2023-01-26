@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"description": "Have devices, trigger stuff",
 	"main": "dist/index.js",
+	"private": true,
 	"bin": {
 		"input-gateway": "dist/index.js"
 	},
@@ -98,5 +99,8 @@
 			"node16-win"
 		],
 		"outputPath": "deploy"
+	},
+	"devDependencies": {
+		"json-schema-to-typescript": "^11.0.3"
 	}
 }

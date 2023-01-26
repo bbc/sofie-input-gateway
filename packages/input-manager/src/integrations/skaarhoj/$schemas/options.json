@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Skaarhoj Panel Options",
+    "type": "object",
+    "properties": {
+        "host": {
+            "type": "string",
+            "ui:title": "Address",
+            "description": "The hostname or IP address of the device to connect to"
+        },
+        "port": {
+            "type": "integer",
+            "ui:title": "Port",
+            "description": "The port number used by the Raw TCP mode server"
+        }
+    },
+    "required": [],
+    "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://example.com/product.schema.json",
+    "title": "Stream Deck Device Options",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "string",
+            "ui:title": "Device Path",
+            "description": "The device path or part of it, where the device is attached in the system device tree"
+        },
+        "serialNumber": {
+            "type": "string",
+            "ui:title": "Serial Number",
+            "description": "The serial number of the device"
+        },
+        "index": {
+            "type": "integer",
+            "ui:title": "Device Index",
+            "description": "The index on the list of attached Stream Deck devices"
+        }
+    },
+    "required": [],
+    "additionalProperties": false
+}
