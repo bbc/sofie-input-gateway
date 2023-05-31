@@ -53,7 +53,7 @@
 		]
 	},
 	"engines": {
-		"node": "^16.14"
+		"node": "^18.15"
 	},
 	"files": [
 		"/dist",
@@ -98,7 +98,7 @@
 			"./package.json"
 		],
 		"targets": [
-			"node16-win"
+			"node18-win"
 		],
 		"outputPath": "deploy"
 	}
